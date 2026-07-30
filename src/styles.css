@@ -1,0 +1,255 @@
+/* ============================================================
+MY DESIGN SYSTEM - use only these values (fill in from Week 2)
+------------------------------------------------------------
+background  #FEF8EC      text/ink   #2B2B2B     
+primary     #D6CADD      accent     #FFB3BA   (sparing - 10%)
+headings    32px / 24px  body       16px
+spacing     8 / 16 / 24 / 32 / 40 px
+fonts       Arial (headings) / Arial (body)
+------------------------------------------------------------
+RULE: if a value is not in this legend, it does not go in this file.
+   ============================================================ */
+
+/* WORKED EXAMPLE - the page base. Replace the placeholder values with YOUR
+   own from the legend above (same hex, same sizes everywhere). */
+
+/* Navigation links. TODO: colour, no underline, spacing from your legend. */
+.nav-link 
+{
+    color: #2B2B2B;
+    text-decoration: none;
+    /* TODO: colour from your legend, text-decoration, padding from your scale */
+}
+
+/* Buttons - the accent belongs here (the "10"). TODO: finish from legend. */
+.btn 
+{
+    background-color: #FFB3BA;
+    color: #2B2B2B;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    /* TODO: background = your accent, text colour, padding from your scale */
+}
+
+
+.body
+{
+    max-width: 1450px;
+    margin:24px auto;
+    padding: 16px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #FEF8EC;
+    color: #2B2B2B;
+}
+
+h1
+{
+    font-size: 32px;
+}
+
+h2, h3
+{
+    font-size: 24px;
+}
+
+.nav-list ul
+{
+    display: flex; 
+    flex-direction: row;
+    list-style: none; 
+    gap: 24px; 
+    margin: 0;
+    padding: 16px; 
+}
+
+.site-header
+{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin: 16px;
+}
+
+.profile-picture 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    padding: 16px;
+}
+
+.introduction img 
+{
+    width: 300px; 
+    height: 300px; 
+    border-radius: 8px; 
+    background-color: #D6CADD;
+    object-fit: cover;
+}
+
+.introduction h3
+{
+    font-size: 24px; 
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.introduction   
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    
+}
+
+.divider1
+{
+    height: 8px;
+    background-color: #D6CADD;
+    border: none;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.credentials
+{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+}
+
+.credentials h3
+{
+    font-size: 24px; 
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.proj-comps
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.proj-comps h3
+{
+    text-align: center;
+    font-size: 24px;
+}
+
+.whole-proj-space
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+.whole-comp-space
+{   
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 24px;
+    border-left: 5px solid #D6CADD;
+}
+
+.projects 
+{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex-grow: 1;
+}
+
+.competitions 
+{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    flex-grow: 1;
+}
+
+.comp-card 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    background-color: #D6CADD;
+    border: 1px solid #FFB3BA;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.card-img-left
+{
+    flex-shrink: 0;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    align-items: center;
+    text-align: center;
+
+    flex-grow: 1;
+}
+
+.card 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    align-items: center;
+    text-align: center;
+
+    background-color: #D6CADD;
+    border: 1px solid #FFB3BA;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.card-img 
+{
+    width: 100%;
+}
+
+.contact-Footer
+{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-Footer h3
+{
+    font-size: 24px; 
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.card, .comp-card
+{
+    background-color: #FFDAB9;
+    border: 1px solid #D6CADD;
+}
